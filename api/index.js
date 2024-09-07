@@ -13,7 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", async (res, req) => {
-  res.json({message: `Connected to PORT ${process.env.PORT}`})
+  req.json({message: `Connected to PORT ${process.env.PORT}`})
 })
 
 app.post("/sendEmail", async (req, res) => {
