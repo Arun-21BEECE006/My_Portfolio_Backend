@@ -12,7 +12,7 @@ const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(cors());
 
-app.get("/", async (res, req) => {
+app.get("/", async (req, res) => {
   res.json({message: `Connected to PORT ${process.env.PORT}`})
 })
 
