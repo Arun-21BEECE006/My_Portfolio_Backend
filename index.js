@@ -175,8 +175,8 @@ app.post("/api/sendEmail", async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.EMAIL_USER,  // Set in .env
-      pass: process.env.EMAIL_PASS,  // Set in .env
+      user: "masterarun182@gmail.com",  // Set in .env
+      pass: "azfj pozb nwpk uoae",  // Set in .env
     },
     tls: {
       rejectUnauthorized: false
@@ -225,8 +225,8 @@ app.post("/api/thankyouMail", async (req, res) => {
     port: 465,
     secure: true,
     auth: {
-      user: process.env.EMAIL_USER,  // Set in .env
-      pass: process.env.EMAIL_PASS,  // Set in .env
+      user: "masterarun182@gmail.com",  // Set in .env
+      pass: "azfj pozb nwpk uoae",  // Set in .env
     },
     tls: {
       rejectUnauthorized: false
