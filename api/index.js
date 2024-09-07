@@ -12,6 +12,10 @@ const port = process.env.PORT || 8000;
 app.use(express.json());
 app.use(cors());
 
+app.get("/", async (res, req) => {
+  res.json({message: `Connected to PORT ${process.env.PORT}`})
+})
+
 app.post("/sendEmail", async (req, res) => {
   res.json({message: `Running in ${process.env.PORT}`})
   const transporter = nodemailer.createTransport({
@@ -137,3 +141,6 @@ app.post("/thankyouMail", async (req, res) => {
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`, process.env.PORT);
 });
+
+
+module.exports = app;
