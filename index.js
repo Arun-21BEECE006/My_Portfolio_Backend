@@ -13,6 +13,7 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/sendEmail", async (req, res) => {
+  res.json({message: `Running in ${process.env.PORT}`})
   const transporter = nodemailer.createTransport({
     host:"smtp.gmail.com'",
     service: "Gmail",
